@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#0f172a,#1e293b);
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.5);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    font-size: 30px;
+    margin-right: 10px;
+    color: cyan;
+}
+
+nav button {
+    background: none;
+    border: none;
+    color: white;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+nav button.active,
+nav button:hover {
+    color: cyan;
+}
+
+.page {
+    display: none;
+    padding: 40px;
+    animation: fade 0.5s;
+}
+
+.page.active {
+    display: block;
+}
+
+.hero img,
+#about img {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: rgba(0,255,255,0.2);
+}
+
+.gallery {
+    display: flex;
+    gap: 15px;
+}
+
+.gallery img {
+    width: 30%;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+form input, form select, form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+form button {
+    background: cyan;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+@keyframes fade {
+    from {opacity:0;}
+    to {opacity:1;}
+}
