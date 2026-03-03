@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>CIT - Club Informatique & Télécommunications</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <span class="logo-icon">⚡</span>
+        <div>
+            <h1>CIT</h1>
+            <p>Club Informatique & Télécommunications</p>
+        </div>
+    </div>
+
+    <nav>
+        <button class="nav-btn active" data-page="home">Accueil</button>
+        <button class="nav-btn" data-page="about">À propos</button>
+        <button class="nav-btn" data-page="activities">Activités</button>
+        <button class="nav-btn" data-page="gallery">Galerie</button>
+        <button class="nav-btn" data-page="register">Inscription</button>
+    </nav>
+</header>
+
+<main>
+
+<!-- PAGE ACCUEIL -->
+<section id="home" class="page active">
+    <div class="hero">
+        <h2>Innovation • Technologie • Excellence</h2>
+        <p>
+            Le CIT est une communauté d’étudiants passionnés par le développement,
+            les télécommunications, l’intelligence artificielle et la cybersécurité.
+            Notre mission est de transformer les étudiants en ingénieurs compétents
+            capables de créer des solutions technologiques innovantes.
+        </p>
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Technology">
+    </div>
+</section>
+
+<!-- PAGE ABOUT -->
+<section id="about" class="page">
+    <h2>Qui sommes-nous ?</h2>
+    <p>
+        Le Club Informatique & Télécommunications est un espace d’apprentissage,
+        d’innovation et de collaboration. Nous organisons des formations avancées,
+        des hackathons et des projets concrets pour préparer nos membres au monde professionnel.
+    </p>
+    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c" alt="Team">
+</section>
+
+<!-- PAGE ACTIVITIES -->
+<section id="activities" class="page">
+    <h2>Nos Activités</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>💻 Développement</h3>
+            <p>HTML, CSS, JavaScript, React, projets réels et compétitions.</p>
+        </div>
+        <div class="card">
+            <h3>📡 Réseaux</h3>
+            <p>Configuration Cisco, sécurité réseau, infrastructures télécom.</p>
+        </div>
+        <div class="card">
+            <h3>🔐 Cybersécurité</h3>
+            <p>Protection des systèmes, hacking éthique et audit sécurité.</p>
+        </div>
+    </div>
+</section>
+
+<!-- PAGE GALERIE -->
+<section id="gallery" class="page">
+    <h2>Galerie</h2>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1537432376769-00a9f4b3e8d2">
+        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+    </div>
+</section>
+
+<!-- PAGE REGISTER -->
+<section id="register" class="page">
+    <h2>Rejoindre le CIT</h2>
+    <form id="registerForm">
+        <input type="text" id="firstName" placeholder="Prénom">
+        <input type="text" id="lastName" placeholder="Nom">
+        <input type="email" id="email" placeholder="Email">
+        <input type="tel" id="phone" placeholder="Numéro de téléphone">
+        <select id="field">
+            <option value="">Domaine d’intérêt</option>
+            <option>Développement</option>
+            <option>Réseaux</option>
+            <option>IA</option>
+            <option>Cybersécurité</option>
+        </select>
+        <textarea id="motivation" placeholder="Pourquoi voulez-vous rejoindre le club ?"></textarea>
+        <input type="file" id="photo">
+        <button type="submit">S'inscrire</button>
+        <p id="formMessage"></p>
+    </form>
+</section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
